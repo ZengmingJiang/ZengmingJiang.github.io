@@ -31,12 +31,7 @@ collections:
   featured_tags:
     permalink:         /tag/:name/
     output:            true
-defaults:
-  - scope:
-      path: update.md
-    values:
-      menu: true
-      order: 1
+
 
 # Build settings
 markdown: kramdown
