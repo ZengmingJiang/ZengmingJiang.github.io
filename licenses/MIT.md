@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: license
 title: MIT License
 ---
 

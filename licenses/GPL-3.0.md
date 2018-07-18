@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: license
 title: GNU GENERAL PUBLIC LICENSE
 ---
 
