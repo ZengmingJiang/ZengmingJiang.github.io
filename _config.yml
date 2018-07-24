@@ -31,6 +31,13 @@ collections:
   featured_tags:
     permalink:         /tag/:name/
     output:            true
+comments_provider: gitalk
+
+gitalk:
+    owner: ZengmingJiang
+    repo: blog-comments
+    clientID: 4960631027f22d8a8b3b
+    clientSecret: 26e9dd923f7f6ac03bfc3750681d53d446d46ee6
 
 
 # Build settings
