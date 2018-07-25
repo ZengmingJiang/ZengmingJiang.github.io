@@ -5,9 +5,7 @@
   <div id="disqus_thread"></div>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </aside>
-{% endif %}
-{% if page.comments != false %}
-
+{% elsif site.gitalk.owner %}
     {% if site.comments_provider == 'gitalk' %}
         <div id="gitalk-container"></div>
         <script src="/assets/js/gitalk.min.js"></script>
