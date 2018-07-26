@@ -6,19 +6,17 @@
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </aside>
 {% elsif site.comments_provider == 'gitalk' %}
-<h3>decodeURI(location.pathname)</h3>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
     <div id="gitalk-container"></div>
-    <script src="/assets/js/gitalk.min.js"></script>
-    <script>
+    <script type="text/javascript">
     var gitalk = new Gitalk({
-        id: decodeURI(location.pathname),
+        id: decodeURI(window.location.pathname),
         clientID: '{{ site.gitalk.clientID }}',
         clientSecret: '{{ site.gitalk.clientSecret }}',
         repo: '{{ site.gitalk.repo }}',
         owner: '{{ site.gitalk.owner }}',
         admin: ['{{ site.gitalk.owner }}'],
-        labels: ['gitment'],
-        distractionFreeMode: true
     });
     gitalk.render('gitalk-container');
     </script>
