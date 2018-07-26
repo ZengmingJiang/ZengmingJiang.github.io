@@ -11,7 +11,7 @@
     <div id="gitalk-container"></div>
     <script type="text/javascript">
     var gitalk = new Gitalk({
-        id: 'BlogComment',
+        id: decodeURI(window.location.pathname),
         clientID: '{{ site.gitalk.clientID }}',
         clientSecret: '{{ site.gitalk.clientSecret }}',
         repo: '{{ site.gitalk.repo }}',
