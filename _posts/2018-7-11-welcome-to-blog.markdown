@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to My Blog!"
+title:  "Welcome to blog"
 date:   2018-07-11 21:55:26 +0800
 categories: [jekyll, Game-D&R]
 ---
