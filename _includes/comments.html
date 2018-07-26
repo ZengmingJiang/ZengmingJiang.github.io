@@ -6,12 +6,12 @@
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </aside>
 {% elsif site.comments_provider == 'gitalk' %}
-<h3>{% decodeURI(window.location.pathname) %}</h3>
+<h3>decodeURI(location.pathname)</h3>
     <div id="gitalk-container"></div>
     <script src="/assets/js/gitalk.min.js"></script>
     <script>
     var gitalk = new Gitalk({
-        id: {% decodeURI(window.location.pathname) %},
+        id: decodeURI(location.pathname),
         clientID: '{{ site.gitalk.clientID }}',
         clientSecret: '{{ site.gitalk.clientSecret }}',
         repo: '{{ site.gitalk.repo }}',
