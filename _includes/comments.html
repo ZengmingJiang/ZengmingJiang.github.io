@@ -1,14 +1,12 @@
-<h3 align="left" style="color:rgb(155,155,155);">pain but poverty</h3>
 {% assign disqus = site.disqus | default:site.disqus_shortname %}
 {% if disqus and page.comments %}
-<h3 align="left" style="color:rgb(155,155,155);">Nothing is to be got without pain but poverty</h3>
 <aside class="comments related" role="complementary">
   <h2 class="hr">{{ site.data.strings.comments | default:"Comments" }}</h2>
   <div id="disqus_thread"></div>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </aside>
 {% elsif site.comments_provider == 'gitalk' %}
-<h3 align="left" style="color:rgb(155,155,155);">Nothing is to be got</h3>
+<h3>{{ page.url }}</h3>
     <div id="gitalk-container"></div>
     <script src="/assets/js/gitalk.min.js"></script>
     <script>
