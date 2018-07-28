@@ -46,6 +46,12 @@ theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
 
+author:
+  social:
+    github:  ZengmingJiang
+    email:  <ZengmingJiang@foxmail.com>
+    csdn: https://blog.csdn.net/narutojzm1
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
