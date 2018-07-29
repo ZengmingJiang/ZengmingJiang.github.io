@@ -48,9 +48,14 @@ plugins:
 
 author:
   social:
-    github:  ZengmingJiang
     email:  ZengmingJiang@foxmail.com
+    github:  ZengmingJiang
     csdn: https://blog.csdn.net/narutojzm1
+
+leancloud:
+  enable: true
+  app_id: InNJxSFf16yvdImtoke6V5Ul-gzGzoHsz
+  app_key: BOg1PDFcHrPLbdz9XLrcNhTf
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
