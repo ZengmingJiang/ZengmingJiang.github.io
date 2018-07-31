@@ -21,7 +21,7 @@
 
 layout: base
 ---
-
+{% include leancloud-analytics.html %}
 {% assign strings = site.data.strings %}
 
 <article class="page" role="article">
@@ -39,15 +39,6 @@ layout: base
     <ul class="related-posts">
       {% for post in site.posts limit:20 %}
         {% include post-list-item.html post=post %}
-            {% if site.leancloud.enable %}
-        <hr>{{ post.url }}</hr>
-        <hr>{{ post.title }}</hr>
-        <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
-         <span class="post-meta-divider">|</span>
-         <span class="post-meta-item-text"> Hits:  </span>
-         <span class="leancloud-visitors-count"></span>
-        </span>
-    {% endif %}
       {% endfor %}
     </ul>
   {% endif %}

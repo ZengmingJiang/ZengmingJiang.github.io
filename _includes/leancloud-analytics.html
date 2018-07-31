@@ -7,7 +7,6 @@
     function showHitCount(Counter) {
       /* 这是给一个页面中有多篇文章时所调用的，例如博客主界面或者存档界面。
       */
-      console.error('Debug_Enter_showHitCount');
       var query = new AV.Query(Counter);
       var entries = [];
       var $visitors = $(".leancloud_visitors");
@@ -46,7 +45,6 @@
     }
 
     function addCount(Counter) {
-      console.error('Debug_Enter_addCount');
       var $visitors = $(".leancloud_visitors");
       var url = $visitors.attr('id').trim();
       var title = $visitors.attr('data-flag-title').trim();
@@ -98,10 +96,9 @@
 
     $(function() {
       var Counter = AV.Object.extend("Counter");
-      console.error('Debug_Enter');
       if ($('.leancloud_visitors').length == 1) {
         addCount(Counter);
-      } else if ($('.post-link').length > 1){
+      } else{
         showHitCount(Counter);
       }
     });

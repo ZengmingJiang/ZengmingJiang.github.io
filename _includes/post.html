@@ -8,7 +8,6 @@
         {{ post.title }}
       {% if link_title %}</a>{% endif %}
     </h1>
-
     <p class="post-date heading">
       {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
@@ -19,7 +18,13 @@
       {% include tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator %}
       {% include tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator %}
     </p>
-
+        {% if site.leancloud.enable %}
+   <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-text"> Hits:  </span>
+    <span class="leancloud-visitors-count"></span>
+   </span>
+  {% endif %}
     {% include message.html text=post.description hide=page.hide_description %}
   </header>
 
