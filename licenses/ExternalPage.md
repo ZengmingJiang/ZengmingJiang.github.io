@@ -1,7 +1,7 @@
 ---
 layout: license
-title: My CSDN
-redirect_to: https://blog.csdn.net/narutojzm1
+title: URHO3D
+redirect_to: https://urho3d.github.io/
 menu: true
 order: 5
 ---
